@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/runner/easy/build/CMakeFiles/CMakeTmp
+Change Dir: /home/runner/WebServer/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/nix/store/pvkiiw0mp1yx0b21b7k105yywccychgh-gnumake-4.3/bin/make cmTC_028ce/fast && /nix/store/pvkiiw0mp1yx0b21b7k105yywccychgh-gnumake-4.3/bin/make  -f CMakeFiles/cmTC_028ce.dir/build.make CMakeFiles/cmTC_028ce.dir/build
-make[1]: Entering directory '/home/runner/easy/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_028ce.dir/src.c.o
-/nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_028ce.dir/src.c.o -c /home/runner/easy/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_028ce
-/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_028ce.dir/link.txt --verbose=1
-/nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc CMakeFiles/cmTC_028ce.dir/src.c.o -o cmTC_028ce 
-/nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin/ld: CMakeFiles/cmTC_028ce.dir/src.c.o: in function `main':
+Run Build Command(s):/nix/store/pvkiiw0mp1yx0b21b7k105yywccychgh-gnumake-4.3/bin/make cmTC_b2420/fast && /nix/store/pvkiiw0mp1yx0b21b7k105yywccychgh-gnumake-4.3/bin/make  -f CMakeFiles/cmTC_b2420.dir/build.make CMakeFiles/cmTC_b2420.dir/build
+make[1]: Entering directory '/home/runner/WebServer/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2420.dir/src.c.o
+/nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b2420.dir/src.c.o -c /home/runner/WebServer/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b2420
+/nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2420.dir/link.txt --verbose=1
+/nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin/gcc CMakeFiles/cmTC_b2420.dir/src.c.o -o cmTC_b2420 
+/nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin/ld: CMakeFiles/cmTC_b2420.dir/src.c.o: in function `main':
 src.c:(.text.startup+0x23): undefined reference to `pthread_create'
 /nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin/ld: src.c:(.text.startup+0x2c): undefined reference to `pthread_detach'
 /nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin/ld: src.c:(.text.startup+0x35): undefined reference to `pthread_cancel'
 /nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin/ld: src.c:(.text.startup+0x40): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_028ce.dir/build.make:106: cmTC_028ce] Error 1
-make[1]: Leaving directory '/home/runner/easy/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:140: cmTC_028ce/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_b2420.dir/build.make:106: cmTC_b2420] Error 1
+make[1]: Leaving directory '/home/runner/WebServer/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:140: cmTC_b2420/fast] Error 2
 
 
 Source file was:

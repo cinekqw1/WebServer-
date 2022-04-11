@@ -1,3 +1,3 @@
-/home/runner/easy/build/CMakeFiles/rebuild_cache.dir
-/home/runner/easy/build/CMakeFiles/edit_cache.dir
-/home/runner/easy/build/CMakeFiles/EasyProject.dir
+/home/runner/WebServer/build/CMakeFiles/rebuild_cache.dir
+/home/runner/WebServer/build/CMakeFiles/edit_cache.dir
+/home/runner/WebServer/build/CMakeFiles/WebServer.dir

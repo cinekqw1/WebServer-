@@ -63,16 +63,16 @@ RM = /nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/runner/easy
+CMAKE_SOURCE_DIR = /home/runner/WebServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/runner/easy/build
+CMAKE_BINARY_DIR = /home/runner/WebServer/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/EasyProject.dir/all
+all: CMakeFiles/WebServer.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/EasyProject.dir/clean
+clean: CMakeFiles/WebServer.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/EasyProject.dir
+# Target rules for target CMakeFiles/WebServer.dir
 
 # All Build rule for target.
-CMakeFiles/EasyProject.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyProject.dir/build.make CMakeFiles/EasyProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyProject.dir/build.make CMakeFiles/EasyProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/runner/easy/build/CMakeFiles --progress-num=1,2 "Built target EasyProject"
-.PHONY : CMakeFiles/EasyProject.dir/all
+CMakeFiles/WebServer.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/runner/WebServer/build/CMakeFiles --progress-num=1,2,3 "Built target WebServer"
+.PHONY : CMakeFiles/WebServer.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/EasyProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/easy/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/EasyProject.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/easy/build/CMakeFiles 0
-.PHONY : CMakeFiles/EasyProject.dir/rule
+CMakeFiles/WebServer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/WebServer/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/WebServer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/WebServer/build/CMakeFiles 0
+.PHONY : CMakeFiles/WebServer.dir/rule
 
 # Convenience name for target.
-EasyProject: CMakeFiles/EasyProject.dir/rule
+WebServer: CMakeFiles/WebServer.dir/rule
 
-.PHONY : EasyProject
+.PHONY : WebServer
 
 # clean rule for target.
-CMakeFiles/EasyProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyProject.dir/build.make CMakeFiles/EasyProject.dir/clean
-.PHONY : CMakeFiles/EasyProject.dir/clean
+CMakeFiles/WebServer.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/clean
+.PHONY : CMakeFiles/WebServer.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,5 +1,5 @@
 compile = "rm -rf build && mkdir build && cd build && cmake .. && cmake --build ."
-run = "./build/EasyProject"
+run = "./build/WebServer"
 entrypoint = "src/main.cpp"
 
 language="c++"

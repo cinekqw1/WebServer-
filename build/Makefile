@@ -67,10 +67,10 @@ RM = /nix/store/cbxqzxwlga5pm9rk8qa8fgv5387r540l-cmake-3.19.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/runner/easy
+CMAKE_SOURCE_DIR = /home/runner/WebServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/runner/easy/build
+CMAKE_BINARY_DIR = /home/runner/WebServer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/easy/build/CMakeFiles /home/runner/easy/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/WebServer/build/CMakeFiles /home/runner/WebServer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/easy/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/WebServer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named EasyProject
+# Target rules for targets named WebServer
 
 # Build rule for target.
-EasyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EasyProject
-.PHONY : EasyProject
+WebServer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WebServer
+.PHONY : WebServer
 
 # fast build rule for target.
-EasyProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyProject.dir/build.make CMakeFiles/EasyProject.dir/build
-.PHONY : EasyProject/fast
+WebServer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/build
+.PHONY : WebServer/fast
+
+src/Application.o: src/Application.cpp.o
+
+.PHONY : src/Application.o
+
+# target to build an object file
+src/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/src/Application.cpp.o
+.PHONY : src/Application.cpp.o
+
+src/Application.i: src/Application.cpp.i
+
+.PHONY : src/Application.i
+
+# target to preprocess a source file
+src/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/src/Application.cpp.i
+.PHONY : src/Application.cpp.i
+
+src/Application.s: src/Application.cpp.s
+
+.PHONY : src/Application.s
+
+# target to generate assembly for a file
+src/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/src/Application.cpp.s
+.PHONY : src/Application.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -148,7 +175,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyProject.dir/build.make CMakeFiles/EasyProject.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -157,7 +184,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyProject.dir/build.make CMakeFiles/EasyProject.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -166,7 +193,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyProject.dir/build.make CMakeFiles/EasyProject.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/WebServer.dir/build.make CMakeFiles/WebServer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -177,7 +204,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... EasyProject"
+	@echo "... WebServer"
+	@echo "... src/Application.o"
+	@echo "... src/Application.i"
+	@echo "... src/Application.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
