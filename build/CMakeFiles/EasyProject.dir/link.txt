@@ -1,0 +1,1 @@
+g++ -g CMakeFiles/EasyProject.dir/src/main.cpp.o -o EasyProject  -pthread 
