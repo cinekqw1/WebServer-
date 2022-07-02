@@ -2,6 +2,7 @@
 
 #include <mutex>
 #include <condition_variable>
+#include <atomic>
 
 class Application
 {
@@ -13,7 +14,8 @@ public:
   bool run();
 private:
   std::mutex m_mutex;
+
   std::condition_variable m_condVar;
 
-  bool m_isXmlReady{false};
+  std::atomic<bool> m_isXmlReady{false};
 };
